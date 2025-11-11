@@ -179,7 +179,7 @@ const enviarEmail = async (destinatario, producto) => {
                 </div>
                 
                 <div style="text-align: center; margin-top: 20px;">
-                  <a href="https://tu-panel-vendedor.com/productos" class="button">Ver en Mi Panel de Vendedor</a>
+                  <a href="https://europadel-front-lemon.vercel.app/login" class="button">Ver en Mi Panel de Vendedor</a>
                 </div>
               </div>
               
@@ -538,3 +538,4 @@ exports.eliminarProducto = async (req, res) => {
     res.status(500).json({ success: false, message: error.message });
   }
 };
+
