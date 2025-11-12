@@ -9,6 +9,7 @@ const authRoutes = require('./routes/authRoutes');
 const productosAdminRoutes = require('./routes/productosAdminRoutes');
 const productosVendedorRoutes = require('./routes/productosVendedorRoutes');
 const productosPublicRoutes = require('./routes/productosPublicRoutes'); // ✅ NUEVO
+const vendedoractivoRoutes = require('./routes/vendedoractivoRoutes');
 
 dotenv.config();
 
@@ -52,6 +53,8 @@ app.get('/', (req, res) => {
 // RUTAS
 // ========================================
 app.use('/api/auth', authRoutes);
+
+app.use('/api/vendedoractivo', vendedoractivoRoutes);
 
 // ✅ Productos Admin (para el panel de vendedor - seleccionar)
 app.use('/api/productos', productosAdminRoutes);
@@ -105,3 +108,4 @@ const startServer = async () => {
 
 
 startServer();
+
