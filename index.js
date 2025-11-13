@@ -133,7 +133,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    // 'https://newpadel-teal.vercel.app'
+    'https://europadel-front-lemon.vercel.app'
   ],
   credentials: true
 }));
@@ -218,3 +218,4 @@ const startServer = async () => {
 };
 
 startServer();
+
