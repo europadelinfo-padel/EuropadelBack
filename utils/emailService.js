@@ -8,9 +8,7 @@ console.log('\n🔍 Verificando configuración de email...');
 // Verificar que las variables de entorno existen
 if (!process.env.AppGmail || !process.env.AppGmailPassword) {
   console.error('\n❌ ERROR CRÍTICO: Faltan variables de entorno en .env');
-  console.error('Asegúrate de tener:');
-  console.error('  AppGmail=tu-email@gmail.com');
-  console.error('  AppGmailPassword=tu-contraseña-de-aplicacion\n');
+ 
 }
 
 // Configurar transporter con Gmail - MÉTODO 1 (service)
@@ -313,7 +311,7 @@ exports.sendPasswordChangedEmail = async (email, nombre, details) => {
             <p>Ya puedes iniciar sesión con tu nueva contraseña.</p>
             
             <center>
-              <a href="${process.env.FRONTEND_URL || 'http://localhost:3000'}/login" class="button">Iniciar Sesión</a>
+              <a href="${process.env.FRONTEND_URL || 'https://www.europadel.com.ar'}/login" class="button">Iniciar Sesión</a>
             </center>
           </div>
           <div class="footer">
@@ -411,3 +409,4 @@ exports.getDeviceDetails = (req) => {
   console.log('✅ Detalles obtenidos:', details);
   return details;
 };
+
