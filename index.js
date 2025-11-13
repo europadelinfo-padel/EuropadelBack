@@ -133,9 +133,8 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://europadel-front-lemon.vercel.app'
-    'europadel.com.ar'
-    'https://www.europadel.com.ar'
+    'europadel.com.ar',
+    'https://www.europadel.com.ar',
   ],
   credentials: true
 }));
@@ -220,5 +219,6 @@ const startServer = async () => {
 };
 
 startServer();
+
 
 
