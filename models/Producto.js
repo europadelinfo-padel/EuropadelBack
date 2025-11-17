@@ -79,7 +79,7 @@ const productoSchema = new mongoose.Schema(
     },
     categoria: {
       type: String,
-      enum: ["pelota", "ropa", "accesorio"],
+      enum: ["paleta", "ropa", "accesorio"],
       required: true,
     },
     destacado: {
