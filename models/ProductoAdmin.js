@@ -41,7 +41,7 @@ const productoAdminSchema = new mongoose.Schema({
     },
     categoria: {
         type: String,
-        enum: ['pelota', 'ropa', 'accesorio'],
+        enum: ['paleta', 'ropa', 'accesorio'],
         required: true
     },
     destacado: {
@@ -69,3 +69,4 @@ const productoAdminSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('ProductoAdmin', productoAdminSchema);
+
