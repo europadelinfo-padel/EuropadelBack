@@ -69,7 +69,7 @@ const productoUsuarioSchema = new mongoose.Schema(
     },
     categoria: {
       type: String,
-      enum: ["pelota", "ropa", "accesorio"],
+      enum: ["paleta", "ropa", "accesorio"],
       required: true,
     },
     destacado: {
@@ -138,5 +138,6 @@ productoUsuarioSchema.index(
   { productoVendedorId: 1, vendedorId: 1 },
   { unique: true }
 );
+
 
 module.exports = mongoose.model("ProductoUsuario", productoUsuarioSchema);
